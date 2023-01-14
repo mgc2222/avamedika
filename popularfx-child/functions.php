@@ -276,7 +276,7 @@ add_action( 'widgets_init', 'popularfx_widgets_init' );
 // URL of the PFX templates uploads dir
 function popularfx_templates_dir_url(){
 	
-	$template = popularfx_get_template_name();
+	$template = 'popularfx-child';
 	$style = get_template_directory().'/templates/'.$template.'/style.css';
 	
 	if(file_exists($style)){
